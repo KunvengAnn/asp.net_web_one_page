@@ -1,10 +1,10 @@
 D:\c#_and_dot_net_web\QuanlyCafeWeb\bin\QuanlyCafeWeb.dll.config
 D:\c#_and_dot_net_web\QuanlyCafeWeb\bin\QuanlyCafeWeb.dll
 D:\c#_and_dot_net_web\QuanlyCafeWeb\bin\QuanlyCafeWeb.pdb
-D:\c#_and_dot_net_web\QuanlyCafeWeb\obj\Debug\QuanlyCafeWeb.csproj.AssemblyReference.cache
-D:\c#_and_dot_net_web\QuanlyCafeWeb\obj\Debug\QuanlyCafeWeb.csproj.CoreCompileInputs.cache
-D:\c#_and_dot_net_web\QuanlyCafeWeb\obj\Debug\QuanlyCafeWeb.dll
-D:\c#_and_dot_net_web\QuanlyCafeWeb\obj\Debug\QuanlyCafeWeb.pdb
 D:\c#_and_dot_net_web\QuanlyCafeWeb\bin\Newtonsoft.Json.dll
 D:\c#_and_dot_net_web\QuanlyCafeWeb\bin\Newtonsoft.Json.xml
+D:\c#_and_dot_net_web\QuanlyCafeWeb\obj\Debug\QuanlyCafeWeb.csproj.AssemblyReference.cache
+D:\c#_and_dot_net_web\QuanlyCafeWeb\obj\Debug\QuanlyCafeWeb.csproj.CoreCompileInputs.cache
 D:\c#_and_dot_net_web\QuanlyCafeWeb\obj\Debug\QuanlyCafeWeb.csproj.CopyComplete
+D:\c#_and_dot_net_web\QuanlyCafeWeb\obj\Debug\QuanlyCafeWeb.dll
+D:\c#_and_dot_net_web\QuanlyCafeWeb\obj\Debug\QuanlyCafeWeb.pdb

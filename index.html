@@ -3,22 +3,35 @@
 <head>
     <meta charset="utf-8" />
     <title>Quản Lý Quán Cafe</title>
-    <!--<link rel="icon" type="image/png" sizes="36x36" href="assets/Icon/icons8-cafe-36.png">-->
     <link rel="icon" type="image/png" sizes="50x50" href="assets/Icon/icons8-cafe-50.png">
     <!--Lib-->
-    <link href="assets/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <script src="assets/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!--Lib DataTable-->
+    <script src="assets/datatables.min.js"></script>
+    <link href="assets/datatables.min.css" rel="stylesheet" />
+
+    <!--<link href="assets/fontawesome.all.min.css" rel="stylesheet" />
+    <link href="assets/fontawesome.css" rel="stylesheet" />
+    <link href="assets/fontawesome.min.css" rel="stylesheet" />-->
+
     <link href="assets/bootstrap.min.css" rel="stylesheet" />
     <script src="assets/bootstrap.bundle.min.js"></script>
+
+    <link href="assets/jquery-ui.min.css" rel="stylesheet" />
+    <script src="assets/jquery-ui.min.js"></script>
+
     <link href="assets/jquery-confirm.min.css" rel="stylesheet" />
     <script src="assets/jquery-confirm.min.js"></script>
 
-    <!--Library draggable modal dialog   /ui/.....-->
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <link href="assets/toastr.min.css" rel="stylesheet" />
+    <script src="assets/toastr.min.js"></script>
 
-    <link href="assets/MyCode/myStyle.css" rel="stylesheet" />
+    <!--Library draggable modal dialog   /ui/.....-->
+    <!--<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>-->
+
     <script src="assets/MyCode/myScrip.js"></script>
+    <link href="assets/MyCode/myStyle.css" rel="stylesheet" />
 </head>
 <body>
     <div class="row margin-cs">
@@ -32,13 +45,15 @@
                             <p>Cafe ngon Giá rẻ !😅</p>
                         </div>
                     </div>
-                    
-                    <button class="btn btn-primary idActionclick" >Trang Chú</button>
-                    <button class="btn btn-secondary idActionclick">Dang nghi</button>
-                    <button id="" class="btn btn-danger idActionclick">Dang nghi</button>
+                    <!--<button class="btn btn-primary idActionclick" onclick="refreshPage()"><i class="fa-solid fa-house-flag color_icon"></i> Trang Chú</button>-->
+                    <button id="idstatistical" class="btn btn-secondary idActionclick "><i class="fa-brands fa-shopify"></i> Thống kế</button>
+                    <button id="idbuttonNV" class="btn btn-info idActionclick btnPermission"><i class="fa-solid fa-user-plus"></i> Nhân Viên</button>
+                    <button id="idNhaCC" class="btn btn-warning idActionclick btnPermission"><i class="fa-solid fa-industry"></i> Nhà Cùng Cấp</button>
+                    <button id="idbuttonsanpham" class="btn btn-dark idActionclick btnPermission"><i class="fa-solid fa-clipboard-list"></i> Sản Phẩm</button>
                     <button class="btn btn-info me-2 ms-auto not-show float-end" id="cmdLogin"><i class="fa-solid fa-key"></i> Đăng nhập</button>
                     <button class="btn btn-danger float-end me-2 not-show ms-auto " id="cmdLogout"><i class="fa fa-circle-xmark"></i> Logout</button>
                     <span id="idnameLogin" class="not-show float-end me-2 ms-auto padding"></span>
+
                 </div>
             </div>
         </div>
@@ -46,11 +61,20 @@
 
     <div class="row margin-cs">
         <div class="col-md-12">
-            <button id="idThemHD" class="btn btn-dark idActionclick">Thêm Hóa Đơn</button>
-            <h3>Danh sách hóa đơn</h3>
-
+            <button id="idThemHD" class="btn btn-dark idActionclick"><i class="fa-solid fa-circle-plus"></i> Thêm Hóa Đơn</button>
             <!--show table -->
-            <div id="ds-hdCT">Loading...</div>
+            <div class="row">
+                <!--<div class="col-6">
+                    <h3>Danh sách hóa đơn Chi Tiết</h3>-->
+                    <!--Table HDChiTiet-->
+                    <!--<div id="ds-hdCT">Loading...</div>
+                </div>-->
+                <div class="col-12">
+                    <h3><i class="fa-solid fa-place-of-worship"></i> Danh sách hóa đơn</h3>
+                    <!--HoaDon Ban-->
+                    <div id="DsHDBan">Loding...</div>
+                </div>
+            </div>
         </div>
     </div>   
 

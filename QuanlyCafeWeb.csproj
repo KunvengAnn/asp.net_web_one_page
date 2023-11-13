@@ -66,6 +66,9 @@
     <Content Include="assets\bootstrap.min.css" />
     <Content Include="assets\datatables.min.css" />
     <Content Include="assets\datatables.min.js" />
+    <Content Include="assets\fontawesome.all.min.css" />
+    <Content Include="assets\fontawesome.css" />
+    <Content Include="assets\fontawesome.min.css" />
     <Content Include="assets\Icon\icons8-cafe-36.png" />
     <Content Include="assets\Icon\icons8-cafe-50.png" />
     <Content Include="assets\images\cafe.jpg" />
